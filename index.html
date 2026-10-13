@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="description" content="Rushil Pandya, Computer Science student at Rutgers building data, AI and full-stack products." />
+  <title>Rushil Pandya</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="brand magnetic" href="#top" aria-label="Rushil Pandya home">
+      <span class="brand-mark">RP</span>
+      <span class="brand-name">Rushil Pandya</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button magnetic" id="commandButton" type="button" aria-label="Open command palette" title="Command palette (⌘/Ctrl + K)">
+        <span>⌘K</span>
+      </button>
+      <button class="icon-button magnetic" id="themeButton" type="button" aria-label="Toggle color theme" title="Toggle theme">
+        <span class="theme-icon">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> CS · DATA · AI · PRODUCT</p>
+        <h1>
+          I build software that turns
+          <span class="display-italic">complexity</span>
+          into something people can actually use.
+        </h1>
+        <p class="hero-lede">
+          Computer Science junior at Rutgers building data, AI and full-stack products: a voice medication companion for older adults, a medical bill analyzer that placed 3rd at the IBM Datathon, and a full-stack app shipped to real users.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button magnetic" href="#work">Explore selected work <span>↘</span></a>
+          <a class="text-link" href="#about">More about me <span>→</span></a>
+        </div>
+        <div class="hero-meta" aria-label="Profile highlights">
+          <div><span class="meta-label">Currently</span><strong>Software Developer · Scarlet Labs</strong></div>
+          <div><span class="meta-label">Focus</span><strong>Data · AI/ML · Full stack</strong></div>
+          <div><span class="meta-label">Looking for</span><strong>Summer 2027 internships</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Interactive data visualization">
+        <canvas id="signalCanvas"></canvas>
+        <div class="visual-overlay">
+          <div class="visual-topline">
+            <span>LIVE SYSTEM</span>
+            <span>MOVE CURSOR</span>
+          </div>
+          <div class="visual-core">
+            <span class="core-index">↳</span>
+            <div>
+              <small>How I work</small>
+              <strong>Build → test → learn → refine.</strong>
+            </div>
+          </div>
+          <div class="visual-caption">Rutgers CS · Class of 2028 · New Jersey</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Technical skills">
+      <div class="ticker-track">
+        <span>Python</span><i>✦</i><span>SQL</span><i>✦</i><span>FastAPI</span><i>✦</i><span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>PyTorch</span><i>✦</i><span>Pandas</span><i>✦</i><span>Gemini API</span><i>✦</i><span>Docker</span><i>✦</i><span>Java</span><i>✦</i><span>C</span><i>✦</i>
+        <span>Python</span><i>✦</i><span>SQL</span><i>✦</i><span>FastAPI</span><i>✦</i><span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>PyTorch</span><i>✦</i><span>Pandas</span><i>✦</i><span>Gemini API</span><i>✦</i><span>Docker</span><i>✦</i><span>Java</span><i>✦</i><span>C</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell work-section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects with a point of view.</h2>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="ai">AI / Data</button>
+          <button class="filter" type="button" data-filter="product">Full stack</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-category="ai product">
+          <div class="project-number">01</div>
+          <div class="project-art steady-art" aria-hidden="true">
+            <div class="phone">
+              <div class="phone-top"><span>STEADY</span><span>EVENING DOSE</span></div>
+              <h4>How are you feeling today?</h4>
+              <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="levels">
+                <span>REMINDER LEVEL · FADING AS THE HABIT FORMS</span>
+                <div class="level-bars"><b></b><b></b><b></b><b></b></div>
+              </div>
+              <div class="swipe">Swipe up to confirm ↑</div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <div class="project-tags"><span>GEMINI</span><span>VOICE</span><span>FULL STACK</span></div>
+            <h3>Steady</h3>
+            <p>A voice medication companion for older adults. It reminds patients to take their medicine, fades those reminders as the habit forms, runs a short spoken check-in, and quietly texts the caregiver when something seems off.</p>
+            <div class="project-foot">
+              <span>HackRU Fall 2026 · Team lead</span>
+              <button class="project-open" type="button" data-project="steady" aria-label="View Steady case study">View case study ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-number">02</div>
+          <div class="project-art billbuddy-art" aria-hidden="true">
+            <div class="bill-sheet">
+              <span class="line l1"></span><span class="line l2"></span><span class="line l3"></span>
+              <div class="metric">~12% <small>MODEL MAE</small></div>
+              <span class="line l4"></span><span class="line l5"></span>
+            </div>
+            <div class="scan-line"></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-tags"><span>PYTORCH</span><span>OCR</span><span>FASTAPI</span></div>
+            <h3>BillBuddy</h3>
+            <p>Medical bill and health insurance analysis that reads a bill, structures the charges and helps people catch overbilling. Five components built from zero in 24 hours.</p>
+            <div class="project-foot">
+              <span>IBM Datathon · 3rd Place</span>
+              <button class="project-open" type="button" data-project="billbuddy" aria-label="View BillBuddy case study">View case study ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="product">
+          <div class="project-number">03</div>
+          <div class="project-art fambud-art" aria-hidden="true">
+            <pre><code>release 1   <b>✓</b> unit · <b>✓</b> http
+release 2   <b>✓</b> unit · <b>✓</b> http
+release 3   <b>✓</b> unit · <b>✓</b> http
+release 4   <b>✓</b> unit · <b>✓</b> http
+──────────────────────────
+real users  → bugs found → fixed</code></pre>
+          </div>
+          <div class="project-copy">
+            <div class="project-tags"><span>FASTAPI</span><span>REACT</span><span>SQLMODEL</span></div>
+            <h3>Fambud</h3>
+            <p>A full-stack application shipped across four phased releases, with a test gate at every phase and a real-user rollout before public launch.</p>
+            <div class="project-foot">
+              <span>Full-stack product</span>
+              <button class="project-open" type="button" data-project="fambud" aria-label="View Fambud case study">View case study ↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell about-section">
+      <div class="about-index reveal">ABOUT</div>
+      <div class="about-copy reveal">
+        <p class="large-copy">
+          I care about the layer where <em>engineering decisions become user experience.</em> I like taking a real person's problem and shipping something concrete enough to test.
+        </p>
+        <div class="about-columns">
+          <p>I'm a Computer Science junior at Rutgers–New Brunswick, graduating in May 2028, working toward data science, analytics, AI/ML and product-minded engineering. I hold the Google Data Analytics Professional Certificate.</p>
+          <p>My best projects start with someone's actual problem: an older adult missing a dose, a family overpaying a medical bill. They end with a working system that person could use. Away from the keyboard, I've played cricket since I was eight.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-section">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">HOW I WORK</p>
+            <h2>Less decoration. More intent.</h2>
+          </div>
+        </div>
+        <div class="principle-grid">
+          <article class="principle reveal"><span>01</span><h3>Start with the problem.</h3><p>Technology is a lever, not the pitch. I define the pain point before reaching for a stack.</p></article>
+          <article class="principle reveal"><span>02</span><h3>Make the signal visible.</h3><p>Good data work should change what someone understands or decides, not just produce another chart.</p></article>
+          <article class="principle reveal"><span>03</span><h3>Test before trusting.</h3><p>On Fambud, no release shipped without passing its tests, and real users still found bugs the tests missed.</p></article>
+          <article class="principle reveal"><span>04</span><h3>Polish what matters.</h3><p>Interaction, hierarchy, speed and copy all shape whether a technically strong product feels trustworthy.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell experience-section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">EXPERIENCE + MOMENTUM</p>
+          <h2>Learning in public. Building for real.</h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <article class="timeline-row reveal">
+          <div class="timeline-date">FALL 2026 — NOW</div>
+          <div><h3>Software Developer · Scarlet Labs</h3><p>Rutgers CS Department software accelerator. One of four engineers building a full-stack application with an alumni industry mentor, in Agile sprints with Jira and weekly progress reports.</p></div>
+          <div class="timeline-type">Software</div>
+        </article>
+        <article class="timeline-row reveal">
+          <div class="timeline-date">OCT 2026</div>
+          <div><h3>HackRU Fall 2026 · Team lead</h3><p>Led a team of three to build Steady in about 24 hours. Owned the Gemini, ElevenLabs and Twilio integrations, end-to-end integration, the demo and the submission.</p></div>
+          <div class="timeline-type">Hackathon</div>
+        </article>
+        <article class="timeline-row reveal">
+          <div class="timeline-date">JUL — SEP 2026</div>
+          <div><h3>Data Analytics Extern · Breaking Games</h3><p>Designed a relational schema joining six disconnected raw data sources, wrote multi-table SQL to rebuild their relationships, automated manual data work and built a Chart.js reporting view.</p></div>
+          <div class="timeline-type">Data / Analytics</div>
+        </article>
+        <article class="timeline-row reveal">
+          <div class="timeline-date">MAR 2026</div>
+          <div><h3>IBM Datathon · 3rd Place</h3><p>Built BillBuddy and presented its design, model and limitations to IBM executive judges.</p></div>
+          <div class="timeline-type">Award</div>
+        </article>
+        <article class="timeline-row reveal">
+          <div class="timeline-date">SEP 2024 — JAN 2025</div>
+          <div><h3>Social Media &amp; Analytics Chair · Rutgers Cricket Club</h3><p>Ran content strategy from weekly metrics. Grew engagement 30% and event participation 25% across more than 100 members.</p></div>
+          <div class="timeline-type">Leadership</div>
+        </article>
+        <article class="timeline-row reveal">
+          <div class="timeline-date">2024 — 2028</div>
+          <div><h3>Rutgers University–New Brunswick</h3><p>B.S. Computer Science. Coursework in data structures and algorithms, systems programming, discrete structures, linear algebra and statistics.</p></div>
+          <div class="timeline-type">Education</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stack-section section-shell">
+      <div class="stack-card reveal">
+        <div>
+          <p class="eyebrow">TOOLBOX</p>
+          <h2>Enough range to go from raw data to a usable product.</h2>
+        </div>
+        <div class="stack-list">
+          <div><span>Languages</span><p>Python · Java · JavaScript · TypeScript · C/C++ · SQL · R</p></div>
+          <div><span>AI / ML</span><p>PyTorch · Scikit-learn · Gemini API · Claude API · ElevenLabs</p></div>
+          <div><span>Backend / Web</span><p>FastAPI · Flask · SQLModel · REST APIs · React · Chart.js</p></div>
+          <div><span>Data / Tools</span><p>Pandas · NumPy · PostgreSQL · SQLite · Git · Docker · pytest · Twilio</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-shell contact-inner reveal">
+        <p class="eyebrow">LET'S BUILD SOMETHING WORTH REMEMBERING</p>
+        <h2>Have a sharp problem, a strange dataset, or an ambitious product idea?</h2>
+        <div class="contact-row">
+          <div class="contact-actions">
+            <span class="contact-email" id="emailText">rushiltpandya@gmail.com</span>
+            <button class="primary-button magnetic copy-button" type="button" data-copy-email>Copy email <span>↗</span></button>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/rushil1356" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://linkedin.com/in/rushil-pandya" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div>© <span id="year">2026</span> Rushil Pandya</div>
+    <div class="footer-note">Press ⌘K or / to jump anywhere.</div>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog id="projectDialog" class="project-dialog">
+    <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <dialog id="commandDialog" class="command-dialog">
+    <div class="command-box">
+      <div class="command-search"><span>⌘</span><input id="commandInput" aria-label="Command search" placeholder="Jump anywhere…" autocomplete="off" /></div>
+      <div class="command-list" role="listbox">
+        <button type="button" data-target="#work"><span>→</span> Selected work</button>
+        <button type="button" data-project="steady"><span>↗</span> Open Steady case study</button>
+        <button type="button" data-project="billbuddy"><span>↗</span> Open BillBuddy case study</button>
+        <button type="button" data-project="fambud"><span>↗</span> Open Fambud case study</button>
+        <button type="button" data-target="#about"><span>→</span> About</button>
+        <button type="button" data-target="#experience"><span>→</span> Experience</button>
+        <button type="button" data-target="#contact"><span>→</span> Contact</button>
+        <button type="button" data-action="email"><span>⧉</span> Copy email address</button>
+        <button type="button" data-action="theme"><span>◐</span> Toggle theme</button>
+      </div>
+      <div class="command-hint">Type to filter · Enter runs the first match · Esc to close</div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
